@@ -1,0 +1,60 @@
+        Angular -Front End Development
+
+
+        basic command
+
+        1. to create project - ng new project-name / ng new project-name --routing
+
+        2. to run a project - ng serve --open
+
+        3. to create component - ng g c component-name
+
+        4. to create services - ng g s service-name
+
+
+                Basic Concepts
+
+        1. Component - to create {html , css , ts file}  root Componet, AppComponent
+
+        2. Module - to add Libraries to the project - root module -AppModule
+
+        3. Data Binding - data sharing between html and ts
+
+            3.1  One Way Binding
+               
+                3.1.1 Component to view
+
+                    3.1.1.1 String Interpolation : Syntax- {{variable-name}}
+                  
+                    3.1.1.2 Property Binding: [attribute]="variable-name"
+                
+                3.1.2  view to component
+
+                    3.1.2.1 Event Binding: (event)="functioncall()"
+
+                    3.1.2.2 Event Binding Using Servent: (event)="function-call(servent)"
+
+                    3.1.2.3 Template referencing variable  - syntax: #variable-name
+            
+            3.2 Two way Binding   
+               
+                3.2 -Using ngModel- Import FormsModule in AppModule,
+                syntax:[(ngModel)]="variable-name" if it used in form tag set name attribute 
+
+        4. To setup path for a component : defined in App Routing Module
+        syntax: (path:'',component:componentClassName)
+
+        5.Dependancy Injection - to share data between classes
+
+        6.Angular Services - for reduntant data or reusable data
+
+        7.ngSubmit - to to submit entire form  syntax: (ngSubmit)="function-call"
+        
+        8. Angular Forms:-
+
+            8.1  Template Driven Forms - First design html
+            8.2  Model Driven Forms - first create in ts
+                8.2.1 Reactive Forms - Add Validation : ReactiveFormsModule
+                    - form group- FormBuilder dependancy inject, form array, form control
+
+
